@@ -1,0 +1,609 @@
+import url('https://fonts.googleapis.com/css2?family=spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+    
+    
+}
+
+h1 {
+    font-size: 50px;
+    color: #222;
+    
+}
+
+h2 {
+    font-size: 46px;
+    color: #222
+}
+
+h4 {
+    font-size: 20px;
+    color: #222
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+    
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+    
+}
+
+.section-p1 {
+    padding: 40px 80px;
+    
+}
+
+.section-m1 {
+    margin: 40px 0;
+    
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+    
+}
+
+/* Header Start */
+#img img{
+ width: 300px;   
+}
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    background-color: #E3E6F3; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li {
+    
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+
+    color: #088178;
+    
+}
+    
+#navbar li a.active:after,
+#navbar li a:hover:after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+
+/* home page */
+
+#hero {
+    background-image: url("Gproject/cpic.jpg");
+    height:68vh;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height:1px;
+}
+
+#hero h4{
+    margin-left: 50px;
+    color: #99ffff;
+    text-shadow: 2px 2px #222;
+}
+#hero h1{
+    color: #99ffff;
+    text-shadow: 2px 2px #222;
+
+     
+}
+#hero h2{
+    color: #99ffff;
+    text-shadow: 2px 2px #222;
+
+}
+#hero button{
+    background-color: #E3E6F3;
+    color: #222;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    margin-right: 30px;
+    position: relative;
+    left: 70px;
+}
+#hero p{
+    color: #99ffff;
+    padding-left: 38px;
+    text-shadow: 2px 2px #222;
+
+}
+
+
+#feature .fe-box{
+    width: 450px;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 8px;
+    margin: 4px 350px;
+    
+}
+#feature .fdev{
+    width: 700px;
+    height: 180px;
+   margin-bottom: -65px;
+   border: 16px solid #fff;
+   align-content: center;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 200px 90px 80px rgba(70,62,221,0.01);
+
+}
+
+    
+    
+
+#feature .fe-box h4{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: purple;
+    background-color: #646464;
+    margin-left: 250px;
+}
+
+
+#product1{
+    text-align: center;
+}
+    
+
+#product1 h2 span{
+    background-color: #b2d5ff; opacity: 0.5;
+    border-radius: 25px;
+    color: black;
+    
+     
+    
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 15%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+#product1 .pro img{
+ width: 200px;
+border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1px;
+}
+#product1 .pro .des span{
+    color: #0606063;
+    font-size: 16px;
+    font-weight: bold; 
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des .star i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+   
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("Gproject/banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+#banner h4{
+    color: #fff;
+   font-size: 16px;
+   text-shadow: 2px 2px #222;
+}
+#banner h2{
+    color: #fff;
+   font-size: 30px;
+   padding: 10px 0;
+   text-shadow: 2px 2px #222;
+}
+#banner h2 span{
+    color: #ef3636;
+}
+#banner button:hover{
+    background-color: #088178;
+    color: #fff;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+     
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    padding: 3px 3px;
+    
+}
+
+footer a:hover{
+    color: #088178;
+    
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #465b52;
+    margin-right: 4px;
+    cursor: pointer;
+        
+}
+
+/*       Comment Section       */
+#commentS{
+    align-items: center;
+    padding-left: 290px;
+}
+#commentS form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#commentS form input,
+#commentS form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    align-items: center;
+    align-content: center;
+}
+#commentS form textarea{
+    height: 15vh;
+}
+
+#commentS form button{
+    background-color: #088178;
+    margin-bottom: 10px;
+    
+    color: #fff;
+}
+#commentS form a{
+   text-decoration: none;
+   background-color: #088178;
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.output{
+    margin-left: 5px;
+   box-shadow: 2px #222;
+   color: red;
+}
+
+
+
+
+/*          SHOP PAGE             */
+
+#page-header{
+    background-image: url("Gproject/shop_Banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-shadow: 1px 2px #fff;
+}
+
+/*       Single Product       */
+#prodetails{
+    display: flex;
+    margin-top: 12px;
+}
+
+
+#prodetails .single-pro-image{
+    width: 20%;
+    margin-right: 50px;
+    padding-top: 45px;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+padding: 40px 0 20px 0;
+    
+}
+
+#prodetails .single-pro-details h2{
+font-size: 26px;    
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+    background: #99ffff;
+    color: black;
+    border: black solid thin;
+}
+
+/*            login page             */
+#formlog{
+display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border: 2px #222 solid;
+    
+}
+
+/*       About-Page       */
+#page-header.about-header{
+    background-image: url("Gproject/about_banner.jpg");
+}
+
+#page-header.about-header h2 {
+    color: white;
+    text-shadow: 2px 2px #222;
+}
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+    padding-bottom: 50px;
+}
+#about-head h2{
+    padding-left: 200px;
+}
+
+#about-head p{
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+/* start media query */
+@media  (max-width: 390.40px){
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    height: 100vh;
+    width: 220px;
+    background-color: #E3E6F3;
+    box-shadow: 0 4px 60px rgba (0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+        
+}
+
+#navbar li{
+    margin-bottom: 25px;
+}
+#mobile{
+    display: flex;
+    align-items: center;
+}
+
+#mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+}
+#hero {
+    background-image: url("Gproject/cpic.jpg");
+    height:77vh;
+    background-size: cover;
+    width: 60%;
+    background-position: top 25% right 0%;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height:1px;
+     
+}
+#feature .fe-box {
+    text-align: start;
+    width: 300px;
+    padding: 5px 5px;
+    border-radius: 8px;
+    margin: 4px 5px;
+}
+
+
+#feature .fdev {
+    width: 300px;
+    height: 180px;
+    margin-bottom: -65px;
+    border: 16px solid #fff;
+    align-content: start;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+    } 
+ 
+    
+html { overflow-x: hidden;
+}
+
